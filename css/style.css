@@ -3,3 +3,110 @@
     font-family: Market Deco;
     src: url(/fonts/Market_Deco.ttf);
 }
+
+/* Nav bar */
+
+#nav {
+  height: 118px;
+  width: 100%;
+  background-color: #EA9FBC;
+  position: fixed;
+  box-shadow: 0px 2px 5px 0px black;
+  -moz-box-shadow:    0px 2px 5px 0px black;
+  -webkit-box-shadow: 0px 2px 5px 0px black;
+  color: white;
+  font-family: Raleway;
+  font-weight: 800;
+}
+
+.nav-box {
+  display: flex;
+  flex-direction: row;
+  height: 118px;
+  width: 100%;
+  flex:1;
+}
+
+.nav-box li {
+  text-align: left;
+  margin: auto 0;
+  list-style: none;
+  padding: 0 5px;
+}
+
+.nav-box a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-box a:hover {
+  color: #555;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.nav-sign {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.search {
+  float:left;
+  width: 24px;
+  height: 24px;
+}
+
+
+.logo {
+  margin: 0 auto;
+  height: 98px;
+  width: 98px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.hideres {
+  display: none;
+}
+
+.hidesearch {
+  display: none;
+  cursor: text;
+  float: right;
+}
+
+.hidesearch a:hover {
+  color: white;
+}
+
+@media (min-width: 401px) {
+  .hideres {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+ .hidesearch {
+  display: inline-block;
+ }
+}
+
+
+/* IMAGES */
+
+body > section.hero > img {
+  opacity: 0.69;
+  position: relative;
+  top: 120px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+}
