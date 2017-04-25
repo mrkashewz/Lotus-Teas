@@ -10,7 +10,7 @@ body {
   font-weight: normal;
 }
 
-body h2 {
+h2 {
   font-family: Market Deco;
   color: #EA9FBC;
   text-align: center;
@@ -153,7 +153,6 @@ body h2 {
   opacity: 0.06;
   height: 961px;
   width: 100%;
-  margin-top: -770px;
   position: relative;
   min-height: 761px;
 }
@@ -161,13 +160,18 @@ body h2 {
 /* HERO */
 .hero {
   position: relative;
-  display: inline-block;
+  display: block;
+  background:url(../images/heroimg.png);
+  background-size: cover;
+  padding: 50px 50px;
+  height: 460px;
+  width: 100%;
 }
 
 .herobox {
   display: flex;
   background-color: rgba(255,255,255,.75);
-  margin: 0 10px;
+  margin: 0 auto;
   top: 40%;
   z-index: 1;
   border-radius: 12px;
@@ -175,7 +179,8 @@ body h2 {
   position: absolute;
   flex-wrap: wrap;
   height: 40%;
-  max-width: 50vh;
+  max-width: 500vw;
+  width: 400px;
 
 }
 
@@ -236,6 +241,7 @@ body h2 {
   flex-grow: 1;
 }
 
+
 .about h2 {
   justify-content: center;
 }
@@ -286,6 +292,8 @@ body h2 {
 /* BREW */
 .brew {
   position: relative;
+  background:url(../images/brewimg.png);
+  background-size: cover;
 }
 
 .brewrows {
@@ -306,6 +314,15 @@ body h2 {
 
 .brewsquare {
   background-color: #fff;
+  width: 100%;
+}
+
+.brewlist {
+  list-style: none;
+  }
+
+.brewlist p {
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -320,6 +337,13 @@ body h2 {
     margin: 0 auto;
     padding-left: 10%;
     padding-right: 10%;
+  }
+  .brewsquare {
+   background: transparent;
+  }
+  .brewlist {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -344,9 +368,14 @@ body h2 {
   margin: auto 0;
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-
+.sale p {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: 0 auto;
+}
 
 /* FOOTER */
 .footer {
