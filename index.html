@@ -13,6 +13,7 @@
 <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
  </head>
 
 <body>
@@ -41,7 +42,7 @@
   <div class="herobox">
     <h2> Our fresh 2017 harvest Jasmine green tea is now on sale! </h2>
     <p> Mountain grown green tea mixed with jasmine petals with rich floral notes. </p>
-  <a href="#" class="btn-hero"> Shop Now </a>
+  <a href="#" class="btn-hero"> <span class="shop-now"> Shop Now </span> </a>
   </div>
 </section>
 
@@ -61,31 +62,51 @@
 </section>
 
 
-<!-- How to Brew Jasmine -->
+<!-- How to Brew Jasmine Tea -->
 <section class="brew">
-  <h2> How to Brew Jasmine Green Tea </h2>
-  <div class="brewrows">
-    <li class="brewlist"><img src="images/icons/tea.png" class="icons2" /><div class="brewsquare"><p> 1. Place 1-2 tsp of jasmine green tea in a traditional Gaiwan (chinese tea pot). If you’re using a larger tea pot, double the amount. </p></div></li>
-
-    <li class="brewlist"><img src="images/icons/heatwater.png" class="icons2" /><div class="brewsquare"><p> 2. Heat water in a kettle to 175 - 195°F </p></div></li>
-
-    <li class="brewlist"><img src="images/icons/teabrewing.png" class="icons2" /><div class="brewsquare"><p> 3. Pour the water and let the tea steep for 1-3 minutes depending on how strong you’d like your tea. </p></div></li>
-
-    <li class="brewlist"><img src="images/icons/teaready.png" class="icons2" /><div class="brewsquare"><p> 4. Pour into a cup and enjoy! </p></div></li>
+  <div class="brew-steps">
+    <h2>How to Brew Jasmine Green Tea</h2>
+    <ul class="brew-list">
+      <li>
+        <img src="images/icons/tea.png" class="icons2" />
+        <span class="list-text">Place 1-2 tsp of jasmine green tea in a traditional Gaiwan (chinese tea pot). If you’re using a larger tea pot, double the amount.</span>
+      </li>
+      <li>
+        <img src="images/icons/heatwater.png" class="icons2" />
+        <span class="list-text">Heat water in a kettle to 175 - 195°F</span>
+      </li>
+      <li>
+        <img src="images/icons/teabrewing.png" class="icons2" />
+        <span class="list-text">Pour the water and let the tea steep for 1-3 minutes depending on how strong you’d like your tea.</span>
+      </li>
+      <li>
+        <img src="images/icons/teaready.png" class="icons2" />
+        <span class="list__text">Pour into a cup and enjoy!</span>
+      </li>
+    </ul>
   </div>
 </section>
 
 <!-- Jasmine Tea Sale -->
 <section class="sale">
   <h2>Jasmine Green Tea - 2017 Harvest</h2>
-  <img src="images/jasminepearl.jpg" class="jasminepearl" />
-  <div class ="saleinfo"> 
-  <p class="saleheading"> Subtle green tea taste with a smooth floral Jasmine after taste. </p>
-  <p> This tea has been celebrated for its elegant floral notes for centuries. It features a high grade green tea which has been scented, not once but five times with fresh jasmine blossoms. Experience the smooth and floral notes of our newly arrived jasmine green tea today! </p>
+  <div class ="salecontainer">
+    <img src="images/jasminepearl.jpg" class="jasminepearl" />
+    <div class ="saleinfo"> 
+      <p class="saleheading"> Subtle green tea taste with a smooth floral Jasmine after taste. </p>
+      <p> This tea has been celebrated for its elegant floral notes for centuries. It features a high grade green tea which has been scented, not once but five times with fresh jasmine blossoms. Experience the smooth and floral notes of our newly arrived jasmine green tea today! </p>
 
-  <div class="qty">2 oz.</div>
-  <p> $25.00 </p>
-  <a href="#" class="btn-sale"> Checkout </a>
+  <div class="qty"> <span class="oz"> 
+  <select class="sale-dropdown">
+    <option value="1oz"> 1 oz. - $10.00 </option>
+    <option value="2oz"> 2 oz. - $19.00 - SAVE $1</option>
+    <option value="3oz"> 3 oz. - $27.00 - SAVE $3</option>
+    <option value="4oz"> 4 oz. - $35.00 - SAVE $5</option>
+    </select>
+  </span>
+    </div>
+  <a href="#" class="btn-sale"><span class="checkout"> Checkout </span> </a>
+    </div>
 
 </section>
 
@@ -93,7 +114,7 @@
 <footer class="footer">
   <div class="footer-center">
       <img src="images/logo.png" class="footerlogo" />
-      <p> Copyright © Lotus Teas. All Rights Reserved. </p>
+      <p class="footer-text"> Copyright © Lotus Teas. All Rights Reserved. </p>
   </div>
 
 </footer>
